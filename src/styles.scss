@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Poppins;
+    background-color: #f8fbfa;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.avatar,
+.icon-button {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.avatar:not(:first-child) {
+    margin-left: -20px;
+}
+
+.avatar>img {
+    border-radius: 50%;
+    border: solid 3px #fff;
+}
+
+
+.icon-button {
+    border: solid 2px #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    width: 20px;
+    height: 20px;
+}

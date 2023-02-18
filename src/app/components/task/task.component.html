@@ -1,0 +1,21 @@
+<div class="task">
+    <div class="task-title">
+        <h3>{{ task.title }}</h3>
+        <span class="icon-button bg-red">
+            <i class="fa fa-xmark"></i>
+        </span>
+    </div>
+    <ul class="tags">
+        <li *ngFor="let tag of task.tags" [class]="'tag ' + tag.toLowerCase()">
+            {{ tag }}
+        </li>
+    </ul>
+    <div class="avatars">
+        <div *ngFor="let user of task.users" class="avatar">
+            <img [src]="user.avatar" [alt]="user.name" />
+        </div>
+        <div class="avatar add-avatar">
+            <i class="fa fa-circle-plus"></i>
+        </div>
+    </div>
+</div>
