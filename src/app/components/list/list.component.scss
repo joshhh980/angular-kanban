@@ -1,0 +1,18 @@
+@import "../../../assets/variables";
+
+.tasks {
+    & li:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.list-title{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.list-count{
+    font-size: 13px;
+    margin-left: 10px;
+}

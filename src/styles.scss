@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "./assets/variables";
 
 * {
     padding: 0;
@@ -45,4 +46,23 @@ img {
     color: #bbb;
     width: 20px;
     height: 20px;
+}
+
+
+.todo{
+    background-color: $blue-bg;
+    border-color: $blue-bg;
+    color: $blue;
+}
+
+.in-progress{
+    background-color: $yellow-bg;
+    border-color: $yellow-bg !important;
+    color: $yellow;
+}
+
+.done{
+    background-color: $green-bg;
+    border-color: $green-bg;
+    color: $green;
 }

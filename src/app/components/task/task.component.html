@@ -6,7 +6,10 @@
         </span>
     </div>
     <ul class="tags">
-        <li *ngFor="let tag of task.tags" [class]="'tag ' + tag.toLowerCase()">
+        <li *ngFor="let tag of task.tags" [ngClass]="[
+                'tag',
+                tag | lowercase | parameterize,
+            ]">
             {{ tag }}
         </li>
     </ul>

@@ -4,12 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { TaskComponent } from './components/task/task.component';
 import { BoardComponent } from './components/board/board.component';
+import { ListComponent } from './components/list/list.component';
+import { CategoryTasksPipe } from './pipes/category-tasks.pipe';
+import { ParameterizePipe } from './pipes/parameterize.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskComponent,
-    BoardComponent
+    BoardComponent,
+    ListComponent,
+    CategoryTasksPipe,
+    ParameterizePipe
   ],
   imports: [
     BrowserModule

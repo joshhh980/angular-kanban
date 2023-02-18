@@ -1,9 +1,5 @@
 .board{
-    padding: 120px;
-}
-
-.tasks {
-    & li:not(:first-child) {
-        margin-top: 20px;
-    }
+    padding: 120px 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }

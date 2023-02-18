@@ -1,10 +1,8 @@
 <div class="board">
-    <ul class="tasks">
-        <li *ngFor="let task of tasks">
-            <app-task
-                [task]="task"
-            >
-            </app-task>
-        </li>
-    </ul>
+    <app-list title="Todo" [tasks]="tasks | categoryTasks: 'todo' ">
+    </app-list>
+    <app-list title="In Progress" [tasks]="tasks | categoryTasks: 'in-progress' ">
+    </app-list>
+    <app-list title="Done" [tasks]="tasks | categoryTasks: 'done' ">
+    </app-list>
 </div>

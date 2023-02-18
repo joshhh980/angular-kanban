@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { designWebsite, implementAuth, productDesign, task, User1 } from 'src/app/data';
 import { ITask } from 'src/app/models/task';
 
 @Component({
@@ -8,30 +9,21 @@ import { ITask } from 'src/app/models/task';
 })
 export class BoardComponent implements OnInit {
 
-  users = [
-    {
-      name: "User",
-      avatar: "/assets/avatar.jpg", 
-    },
-    {
-      name: "User",
-      avatar: "/assets/avatar.jpg", 
-    },
-  ]
-
   tasks: ITask[] = [
-    {
-      title: "Design Website",
-      category: "todo",
-      tags: ["Design", "HTML"],
-      users: this.users
-    },
-    {
-      title: "Implement Authentication",
-      category: "todo",
+    designWebsite,
+    productDesign,
+    implementAuth,
+    task({
+      ...implementAuth,
+      title: "Bootstrap Backend",
       tags: ["Development"],
-      users: this.users,
-    }
+      users: [User1]
+    }),
+    task({
+      ...productDesign,
+      tags: ["Design", "Done"],
+      category: "done",
+    }),
   ]
 
   constructor() { }
