@@ -1,4 +1,7 @@
-<div class="board">
+<div 
+    class="board"
+    cdkDropListGroup
+>
     <app-list title="Todo" [tasks]="tasks | categoryTasks: 'todo' ">
     </app-list>
     <app-list title="In Progress" [tasks]="tasks | categoryTasks: 'in-progress' ">
